@@ -39,7 +39,7 @@ face_rec/
 ├── docs/                  
 │   └── README.md          # Documentation for the project
 
-└── requirements.txt       # List of project dependencies
+└── requirements.txt       # List of the project dependencies
 
 
 ---
