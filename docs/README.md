@@ -96,7 +96,7 @@ The `video_run.py` script demonstrates how to use the saved model for real-time 
 - Loads the trained model from `saved_model.pkl`.
 - Opens and processes a video file (`video.mp4`).
 - Detects faces in each frame, applies the wavelet transform, and predicts the face label.
-- Draws bounding boxes and labels (e.g., `"CHAEWON"`, `"KAZUHA"`) on the video frames.
+- Draws bounding boxes and labels (e.g., `"PERSON1"`, `"PERSON2"`) on the video frames.
 - Displays the video with the overlaid predictions.
 
 Run the video recognition script with:
