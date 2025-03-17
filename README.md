@@ -1,6 +1,9 @@
 # Face Recognition
 
-This repository implements a face recognition system that leverages traditional computer vision techniques and machine learning. The project uses:
+This repository implements a face recognition system that leverages traditional computer vision techniques and machine learning. 
+https://github.com/user-attachments/assets/273cea91-8444-44d3-bfab-1cc5ccd487a2
+
+The project uses:
 
 - **OpenCV** with Haar cascades for face and eye detection.
 - **PyWavelets (pywt)** for applying wavelet transforms to extract features.
