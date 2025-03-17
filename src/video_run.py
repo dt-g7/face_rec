@@ -28,9 +28,9 @@ def w2d(img, mode='haar', level=1):
     return imArray_H
 
 # Load the saved model
-model = joblib.load('saved_model.pkl')
+model = joblib.load('../models/saved_model.pkl')
 # Open the video file
-cap = cv2.VideoCapture('video.mp4')
+cap = cv2.VideoCapture('../data/video.mp4')
 
 # Check if the video is opened successfully
 if not cap.isOpened():
@@ -40,7 +40,7 @@ if not cap.isOpened():
 while cap.isOpened():
     ret, frame = cap.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    face_detect = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_frontalface_default.xml')
+    face_detect = cv2.CascadeClassifier('../haarcascades/haarcascades/haarcascade_frontalface_default.xml')
     faces = face_detect.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5)
     for (x, y, w, h) in faces:
         input = []

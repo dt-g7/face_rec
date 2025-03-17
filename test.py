@@ -5,13 +5,13 @@ from matplotlib import pyplot as plt
 import os
 import shutil
 # TESTING
-img = cv2.imread('./testimg/00.jpg')
+img = cv2.imread('data/testimg/00.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # print(gray.shape)
 # plt.imshow(gray, cmap='gray')
 # plt.show()
-face_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('haarcascades/haarcascades/haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascades/haarcascade_eye.xml')
 faces = face_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5)
 print(faces)
 print(faces[0])

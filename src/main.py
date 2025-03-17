@@ -19,8 +19,8 @@ import json
 # # print(gray.shape)
 # # plt.imshow(gray, cmap='gray')
 # # plt.show()
-# face_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_frontalface_default.xml')
-# eye_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_eye.xml')
+# face_cascade = cv2.CascadeClassifier('./haarcascades/haarcascades/haarcascade_frontalface_default.xml')
+# eye_cascade = cv2.CascadeClassifier('./haarcascades/haarcascades/haarcascade_eye.xml')
 # faces = face_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5)
 # x, y, w, h = faces[0]
 #
@@ -45,8 +45,8 @@ import json
 # plt.imshow(roi_color, cmap='gray')
 # plt.show()
 
-face_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('../haarcascades/haarcascades/haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('../haarcascades/haarcascades/haarcascade_eye.xml')
 
 
 def get_cropped_image_if_2_eyes(image_path):
@@ -67,8 +67,8 @@ def get_cropped_image_if_2_eyes(image_path):
 # c = get_cropped_image_if_2_eyes('./testimg/0.jpg')
 # plt.imshow(c)
 # plt.show()
-path_to_data = './testimg'
-path_to_cr_data = './testimg/cropped'
+path_to_data = '../data/testimg'
+path_to_cr_data = '../data/testimg/cropped'
 img_dirs = []
 
 # create crop path if needed and img dirs
@@ -154,7 +154,7 @@ p = pipe.fit(x_train, y_train)
 pipe.score(x_test, y_test)
 print(classification_report(y_test, pipe.predict(x_test)))
 
-joblib.dump(p, 'saved_model.pkl')
+joblib.dump(p, '../models/saved_model.pkl')
 
-with open("class_dictionary.json","w") as f:
+with open("../config/class_dictionary.json", "w") as f:
     f.write(json.dumps(class_dict))
