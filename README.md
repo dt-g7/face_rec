@@ -15,7 +15,6 @@ The system processes images from a designated folder, crops faces that have at l
 face_rec/
 
 ├── src/                   
-│   ├── __init__.py        # (Optional: makes this directory a Python package)
 
 │   ├── main.py            # Main script: preprocess images, crop faces, extract features, and train the classifier
 
