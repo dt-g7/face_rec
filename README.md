@@ -1,8 +1,7 @@
 # Face Recognition
 
 This repository implements a face recognition system that leverages traditional computer vision techniques and machine learning. 
-https://github.com/user-attachments/assets/273cea91-8444-44d3-bfab-1cc5ccd487a2
-
+![Image](https://github.com/user-attachments/assets/499458ad-38d1-453b-ab1c-ae3606a1ca85)
 The project uses:
 
 - **OpenCV** with Haar cascades for face and eye detection.
