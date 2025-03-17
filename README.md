@@ -109,6 +109,9 @@ python video_run.py
 
 Note: Adjust the prediction conditions and file paths in the scripts as needed to match your dataset and desired output.
 
+#### Also Note: For optimal face recognition accuracy, ensure the face is well-lit, clearly visible, and directly facing the camera like below:
+![Image](https://github.com/user-attachments/assets/1bc0d990-1bd1-4d37-bbb9-4bb82bac87bd)
+
 ## Customization
 
 ### Data Folder
