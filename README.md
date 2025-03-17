@@ -14,29 +14,35 @@ The system processes images from a designated folder, crops faces that have at l
 ## Repository Structure
 face_rec/
 
-├── .idea/                   # (IDE configuration files; can be ignored)
+├── src/                   
+│   ├── __init__.py        # (Optional: makes this directory a Python package)
 
-├── __pycache__/             # (Python cache files)
+│   ├── main.py            # Main script: preprocess images, crop faces, extract features, and train the classifier
 
-├── opencv/haar_cascades/    # Contains pre-trained Haar cascade XML files (e.g., haarcascade_frontalface_default.xml)
+│   ├── test.py            # Script to test face and eye detection on a single image
 
-├── testimg/                 # Directory containing test images for processing and training
+│   └── video_run.py       # Script to run face recognition on a video file
 
-│   └── (subdirectories with images)
+├── data/                  
+│   ├── images/            # Test images for processing and training (previously in testimg/)
 
-├── class_dictionary.json    # JSON file mapping class names to numeric labels
+│   └── videos/            # Video files (e.g., test.mp4, video.mp4)
 
-├── saved_model.pkl          # Trained model saved as a pickle file
+├── models/                
+│   └── saved_model.pkl    # Trained model saved as a pickle file
 
-├── main.py                  # Main script: preprocess images, crop faces, extract features, and train the classifier
+├── haarcascades/          
+│   └── haarcascade_frontalface_default.xml  # Pre-trained Haar cascade XML file
 
-├── test.py                  # Script to test face and eye detection on a single image
+├── config/                
+│   └── class_dictionary.json  # JSON file mapping class names to numeric labels
 
-├── video_run.py             # Script to run face recognition on a video file (e.g., video.mp4)
+├── docs/                  
+│   └── README.md          # Documentation for the project
 
-├── test.mp4                 # (Example video file for testing; optional)
+├── .gitignore             # To ignore unnecessary files (e.g., __pycache__, .idea/)
+└── requirements.txt       # List of project dependencies
 
-└── video.mp4                # (Example video file used in video_run.py; optional)
 
 ---
 
