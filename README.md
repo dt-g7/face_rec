@@ -39,8 +39,6 @@ face_rec/
 ├── docs/                  
 │   └── README.md          # Documentation for the project
 
-├── .gitignore             # To ignore unnecessary files (e.g., __pycache__, .idea/)
-
 └── requirements.txt       # List of project dependencies
 
 
